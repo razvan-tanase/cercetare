@@ -1,0 +1,21 @@
+[
+  "bigIntSetInt64",
+  "bigIntTDiv",
+  "checkNoPayment",
+  "cleanReturnData",
+  "getGasLeft",
+  "getNumArguments",
+  "mBufferAppend",
+  "mBufferAppendBytes",
+  "mBufferFromBigIntUnsigned",
+  "mBufferGetArgument",
+  "mBufferGetByteSlice",
+  "mBufferGetLength",
+  "mBufferNew",
+  "mBufferSetBytes",
+  "managedExecuteOnDestContext",
+  "managedGetMultiESDTCallValue",
+  "managedSCAddress",
+  "managedSignalError",
+  "signalError"
+]

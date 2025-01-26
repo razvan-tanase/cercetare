@@ -1,0 +1,47 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.82.0",
+            "commitHash": "f6e511eec7342f59a25f7c0534f1dbea00d01b14",
+            "commitDate": "2024-10-15",
+            "channel": "Stable",
+            "short": "rustc 1.82.0 (f6e511eec 2024-10-15)"
+        },
+        "contractCrate": {
+            "name": "liquidity-adder",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "multiversx-sc",
+            "version": "0.53.2"
+        }
+    },
+    "name": "LiquidityAdder",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "upgradeConstructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "addLiquidity",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "destination",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "esdtAttributes": [],
+    "hasCallback": false,
+    "types": {}
+}
