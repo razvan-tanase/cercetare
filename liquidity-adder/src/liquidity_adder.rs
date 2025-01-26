@@ -45,4 +45,16 @@ pub trait LiquidityAdder {
             .payment(multi_payment)
             .sync_call();
     }
+
+    #[view(getRewardTokenIdentifier)]
+    fn get_reward_token_identifier(&self, destination: ManagedAddress) -> TokenIdentifier {
+        let result = self.tx()
+            .to(destination)
+            .typed(proxy::PairProxy)
+            .get_lp_token_identifier()
+            .returns(ReturnsResult)
+            .sync_call_readonly();
+        
+        result
+    }
 }
